@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deenprasath - Portfolio</title>
+    <link rel="stylesheet" href="event1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#home" class="logo">Deenprasath</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <canvas id="starCanvas"></canvas>
+        <div class="container">
+            <h1>Hi, I'm <span class="accent">Deenprasath</span></h1>
+            <p>Aspiring SDE | Prompt Engineer | Full Stack Developer in Training | DSA Explorer | Hackathon Enthusiast</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I have practical web development experience and am an enthusiastic Java Full Stack Developer and Prompt Engineer. I enjoy creating scalable solutions and learning new technologies quickly. I am proficient in Java, Python, React, and MySQL. Known for strong teamwork, leadership, and communication skills demonstrated through hackathons and tech events. I’m currently exploring AI, full stack technologies, and deepening my understanding of DSA.
+
+</p>
+        </div>
+    </section>
+
+  <section id="skills">
+  <div class="container">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-name">Programming Languages (Java, C, C++, Python)</div>
+        <div class="skill-bar">
+          <span style="width: 55%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-name">Frontend Development (HTML, CSS, JS, React, Node.js, jQuery)</div>
+        <div class="skill-bar">
+          <span style="width: 75%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-name">UI/UX Design</div>
+        <div class="skill-bar">
+          <span style="width: 70%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-name">Full Stack / Web / Java Full Stack Development</div>
+        <div class="skill-bar">
+          <span style="width: 60%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-name">Database Management (DBMS, MySQL)</div>
+        <div class="skill-bar">
+          <span style="width: 65%"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section id="services">
+        <div class="container">
+            <h2>Services I Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Creating modern, high-performance websites with clean and efficient code.</p>
+                </div>
+                <div class="service-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly and visually appealing web interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Full Stack Development</h3>
+                    <p>Delivering seamless and scalable solutions from concept to deployment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" alt="Project 1">
+                    </div>
+                    <h3>Project 1</h3>
+                    <p>A full-stack web app built using React & Node.js.</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Project 2">
+                    </div>
+                    <h3>Project 2</h3>
+                    <p>A responsive e-commerce website with a clean UI.</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p><strong>Email:</strong> sdeenprasath@gmail.com</p>
+                <p><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/deenprasaths090705" target="_blank">Visit Profile</a></p>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+<div id="thank-you-message" style="display: none; margin-top: 20px; color: #00adb5;">
+  <h3>Thank you! Your message has been sent successfully.</h3>
+</div>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent default form submission
+
+    const formData = new FormData(this);
+
+    fetch("https://formsubmit.co/ajax/sdeenprasath@gmail.com", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        this.reset(); // clear form
+        document.getElementById("thank-you-message").style.display = "block";
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    }).catch(error => {
+      alert("Error occurred. Please try again.");
+    });
+  });
+</script>
+
+        </div>
+    </div>
+</section>
+
+
+    
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Deenprasath. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Star background animation
+        const canvas = document.getElementById('starCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        const stars = [];
+        for(let i = 0; i < 200; i++) {
+            stars.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 2,
+                speed: Math.random() * 0.5
+            });
+        }
+
+        function animate() {
+            ctx.fillStyle = '#1A1F2C';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            stars.forEach(star => {
+                ctx.fillStyle = '#ffffff';
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+                ctx.fill();
+
+                star.y += star.speed;
+                
+                if(star.y > canvas.height) {
+                    star.y = 0;
+                    star.x = Math.random() * canvas.width;
+                }
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
