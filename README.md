@@ -1,40 +1,51 @@
-# 🚀 TechClub - College Club Website
-### 🧑‍💻 Developed by: **S. DeenPrasath**
+# 🌟 Deenprasath - Personal Portfolio Website
 
-A modern, fully responsive multi-page website built for a college Tech Club using HTML, CSS, and JavaScript. It showcases club activities, upcoming events, team members, gallery highlights, and contact options — all with stylish animations and responsive design.
-
-![Demo Screenshot](portfolio.png)
+Welcome to my **personal portfolio website**! This project showcases my profile, skills, services, and projects as a Full Stack Developer and Tech Enthusiast. The site includes a beautifully animated UI, responsive layout, and a working contact form integrated with **FormSubmit**.
 
 ---
 
-## 🔗 Live Demo
+## 🚀 Live Demo
 
-👉 **[Click here to view the live project](https://Deenprasath.github.io/college-club-website/)**
-
-> ✅ Make sure GitHub Pages is enabled from the repository's settings (`main` branch / root).
+🔗 [Click Here to Visit the Live Website](https://deenprasath.github.io/Portfolio-webpage/)
 
 ---
 
-## 🌟 Features
+## 📸 Screenshots
 
-- 🎯 Animated Hero section with parallax effect
-- 📚 About section with club story, mission, and vision
-- 🗓️ Events with interactive cards and registration
-- 👥 Members: core team and active contributors
-- 🖼️ Gallery with lightbox preview of event photos
-- 📬 Contact form with validation and fake send simulation
-- 📱 Fully mobile responsive with hamburger menu
-- 🎨 Custom gradients, glassmorphism cards, and modern UI
+### 🔹 Hero Section with Animated Background
 
----
+![Hero Screenshot](portfolio.png)
 
-## 🛠 Tech Stack
+### 🔹 Skills and Services Sections
 
-- `HTML5` – Structure
-- `CSS3` – Custom styling and responsiveness
-- `JavaScript (Vanilla)` – DOM interactivity, gallery, form logic
+![Skills Screenshot](portfolio1.png)
+
+### 🔹 Contact Form with AJAX + FormSubmit
+
+![Contact Screenshot](portfolio3.png)
+
 
 ---
 
-## 📁 Project Structure
+## 🧰 Built With
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla JS + DOM + Canvas Animations)**
+- **FormSubmit** – for contact form handling without backend
+- **Flask (Optional)** – to serve the HTML locally using `app.py`
+
+---
+
+## 📁 Folder Structure
+
+
+portfolio/
+├── templates/
+│ └── index.html # Main webpage
+├── static/
+│ └── event1.css # CSS styles
+├── app.py # Flask server (optional for preview)
+├── screenshots/ # Screenshots for README
+├── README.md # Project info (this file)
 
