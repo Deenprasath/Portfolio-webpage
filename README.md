@@ -22,7 +22,7 @@ Welcome to my **personal portfolio website**! This project showcases my profile,
 
 ### 🔹 Contact Form with AJAX + FormSubmit
 
-![Contact Screenshot](portfolio3.png)
+![Contact Screenshot](portfolio2.png)
 
 
 ---
